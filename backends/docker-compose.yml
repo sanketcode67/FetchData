@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  banglore:
+    build: ./banglore
+    ports:
+      - "8000:8000"  # Map Django server of project1 to host port 8000
+
+  delhi:
+    build: ./delhi
+    ports:
+      - "8001:8001"  # Map Django server of project2 to host port 8001
+
+  kolkata:
+    build: ./kolkata
+    ports:
+      - "8002:8002"  # Map Django server of project3 to host port 8002
